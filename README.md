@@ -8,3 +8,15 @@ To start the app, run:
 yarn install
 yarn dev
 ```
+
+## Generate Clients
+
+Generate with `npx autorest README.md --tag=petstore`
+
+```yaml $(tag) == 'petstore'
+# https://petstore.swagger.io
+input-file: https://petstore.swagger.io/v2/swagger.yaml
+typescript: true
+output-folder: plugins/petstore-client
+generate-metadata: false
+```
