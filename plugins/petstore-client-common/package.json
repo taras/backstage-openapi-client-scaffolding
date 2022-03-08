@@ -18,10 +18,15 @@
     "test": "backstage-cli test",
     "prepack": "backstage-cli prepack",
     "postpack": "backstage-cli postpack",
-    "clean": "backstage-cli clean"
+    "clean": "backstage-cli clean",
+    "generate": "openapi-generator-plus -c config.yaml"
   },
   "devDependencies": {
     "@backstage/cli": "^0.15.0"
+  },
+  "dependencies": {
+    "openapi-generator-plus": "^1.1.0",
+    "@openapi-generator-plus/typescript-fetch-client-generator2": "^0.0.1"
   },
   "files": [
     "dist"
